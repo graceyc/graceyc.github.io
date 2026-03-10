@@ -35,3 +35,26 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
         }
     });
 });
+
+// ═══════════════════════════════════════
+// Lightbox — click to enlarge photos
+// ═══════════════════════════════════════
+function openLightbox(src) {
+    let lb = document.querySelector('.lightbox');
+    if (!lb) {
+        lb = document.createElement('div');
+        lb.className = 'lightbox';
+        lb.innerHTML = '<span class="lightbox-close">&times;</span><img src="" alt="Enlarged photo">';
+        document.body.appendChild(lb);
+        lb.addEventListener('click', () => lb.classList.remove('active'));
+    }
+    lb.querySelector('img').src = src;
+    lb.classList.add('active');
+}
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+        const lb = document.querySelector('.lightbox');
+        if (lb) lb.classList.remove('active');
+    }
+});
