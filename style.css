@@ -445,8 +445,9 @@ nav.scrolled {
 }
 .pub-card-body {}
 .pub-card-body h3 {
-    font-family: var(--serif);
+    font-family: var(--sans);
     font-size: 1.15rem;
+    font-weight: 600;
     line-height: 1.35;
     margin-bottom: 0.4rem;
 }
@@ -695,9 +696,9 @@ nav.scrolled {
     object-fit: cover;
 }
 .project-full-body h3 {
-    font-family: var(--serif);
+    font-family: var(--sans);
     font-size: 1.4rem;
-    font-weight: 400;
+    font-weight: 600;
     margin-bottom: 0.5rem;
     letter-spacing: -0.01em;
 }
