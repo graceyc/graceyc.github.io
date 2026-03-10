@@ -3,8 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Awards — Grace Yuan</title>
+    <title>Olympiad Journey — Grace Yuan</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .reflection {
+            margin-top: 1.5rem;
+            padding: 2rem 2.25rem;
+            background: var(--bg-cream);
+            border: 1px solid var(--border-light);
+            border-radius: 14px;
+            position: relative;
+        }
+        .reflection::before {
+            content: '\201C';
+            font-family: var(--serif);
+            font-size: 4rem;
+            color: var(--accent);
+            opacity: 0.15;
+            position: absolute;
+            top: 0.5rem;
+            left: 1rem;
+            line-height: 1;
+        }
+        .reflection p {
+            font-size: 0.95rem;
+            color: var(--text-soft);
+            line-height: 1.85;
+            margin-bottom: 1rem;
+        }
+        .reflection p:last-child { margin-bottom: 0; }
+        .reflection em { color: var(--text); font-style: italic; }
+        .reflection strong { color: var(--text); font-weight: 600; }
+        .reflection a { text-decoration: underline; text-underline-offset: 2px; }
+
+        .olympiad-links {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+        }
+        .olympiad-links a {
+            font-size: 0.78rem;
+            font-weight: 500;
+            padding: 0.35rem 0.85rem;
+            border-radius: 6px;
+            background: var(--accent-soft);
+            color: var(--accent);
+            transition: all 0.2s var(--ease-smooth);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+        .olympiad-links a:hover {
+            background: var(--accent);
+            color: #fff;
+            opacity: 1;
+        }
+
+        .olympiad-section {
+            padding: 3rem 0;
+            border-bottom: 1px solid var(--border-light);
+        }
+        .olympiad-section:first-of-type {
+            border-top: 1px solid var(--border-light);
+        }
+        .olympiad-section:last-of-type {
+            border-bottom: none;
+            padding-bottom: 5rem;
+        }
+        .olympiad-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 0.25rem;
+        }
+        .olympiad-header h2 {
+            font-family: var(--serif);
+            font-size: 1.5rem;
+            font-weight: 400;
+            letter-spacing: -0.02em;
+        }
+        .olympiad-date {
+            font-family: var(--mono);
+            font-size: 0.72rem;
+            color: var(--text-faint);
+        }
+        .olympiad-subtitle {
+            font-size: 0.92rem;
+            color: var(--accent);
+            font-family: var(--serif);
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+
+        .video-embed {
+            margin-top: 1.5rem;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid var(--border-light);
+        }
+        .video-embed iframe {
+            width: 100%;
+            aspect-ratio: 16/9;
+            display: block;
+            border: none;
+        }
+    </style>
 </head>
 <body>
 
@@ -24,34 +128,100 @@
 
 <div class="page">
     <div class="page-header">
-        <div class="section-tag reveal">Recognition</div>
-        <h1 class="section-heading reveal r-d1">Awards &amp; Honors</h1>
+        <div class="section-tag reveal">Olympiad Journey</div>
+        <h1 class="section-heading reveal r-d1">More Than Medals</h1>
         <p class="section-desc reveal r-d2">
-            International math olympiad results representing Australia.
+            Representing Australia in international math olympiads shaped who I am. 
+            These are the experiences behind the results.
         </p>
     </div>
 
-    <div class="awards-full">
-
-        <div class="awards-year-group reveal">
-            <div class="awards-year">2022</div>
-            <div class="award-full-item">
-                <div class="award-full-icon">◆</div>
-                <div class="award-full-info">
-                    <h3>International Mathematical Olympiad (IMO)</h3>
-                    <p>Honourable Mention · Maryam Mirzakhani Prize (best female score in Oceania) — July 2022. Represented Australia.</p>
-                </div>
-            </div>
-            <div class="award-full-item">
-                <div class="award-full-icon">★</div>
-                <div class="award-full-info">
-                    <h3>European Girls' Mathematical Olympiad (EGMO)</h3>
-                    <p>Gold Medal — Ranked 6th globally — April 2022. Represented Australia.</p>
-                </div>
-            </div>
+    <!-- ═══ IMO ═══ -->
+    <div class="olympiad-section reveal">
+        <div class="olympiad-header">
+            <h2>International Mathematical Olympiad</h2>
+            <span class="olympiad-date">July 2022 · Oslo, Norway</span>
+        </div>
+        <div class="olympiad-subtitle">
+            Honourable Mention · Maryam Mirzakhani Prize (best female score in Oceania)
         </div>
 
+        <div class="reflection">
+            <p>
+                <strong>Two weeks I'll never forget.</strong> I went to Oslo expecting a math competition 
+                and came back with so much more. By the end of our practice sessions, I'd somehow 
+                fallen in love with four-and-a-half-hour exams — I genuinely could've kept going.
+            </p>
+            <p>
+                The people made it special. 15,976 km from Melbourne, I met strangers on planes, 
+                shared tables with people I couldn't even speak the same language as, and bonded with 
+                someone on a bus over a 
+                <a href="https://open.spotify.com/track/5P8lyudWE7HQxb4ludLbEm?si=1d644b0b1d554c1e" target="_blank">song</a>. 
+                A contestant printed a geometric problem on his T-shirt that intrigued young mathematicians 
+                from various countries to sit together and discuss solutions. Girls in my dorm shared our 
+                own stories with maths, feeling inspired by each other and the fact that maths indeed 
+                transcends physical borders and intangible barriers.
+            </p>
+            <p>
+                I don't think I'll ever have anything quite like it again — hundreds of people from 
+                different countries who all share this one obsession with math, sitting together to 
+                discuss problems, play games, and just hang out. More incredible minds in one place 
+                than I could count. One thought kept coming back during those two weeks: <em>I am so 
+                lucky.</em> To sit for an IMO exam. To read the oath on behalf of all contestants at 
+                the opening ceremony. To have teammates and coaches who were as kind as they were 
+                talented. None of it was something I ever dared to imagine.
+            </p>
+            <p>
+                Coming home felt bittersweet. My only real regret? I fell in love with competition 
+                math right at the end — just when I felt most fired up, the journey was over.
+            </p>
+            <p>
+                So this journey to Oslo was more than just the IMO.
+            </p>
+        </div>
+
+        <div class="exp-gallery-grid" style="grid-template-columns: repeat(3, 1fr); margin-top: 1.5rem;">
+            <img src="imo-1.jpeg" alt="IMO Oslo" onclick="openLightbox(this.src)">
+            <img src="imo-2.jpeg" alt="IMO team" onclick="openLightbox(this.src)">
+            <img src="imo-3.jpeg" alt="IMO experience" onclick="openLightbox(this.src)">
+            <img src="imo-4.jpeg" alt="IMO ceremony" onclick="openLightbox(this.src)">
+            <img src="imo-5.jpeg" alt="IMO friends" onclick="openLightbox(this.src)">
+            <img src="imo-6.jpeg" alt="IMO memories" onclick="openLightbox(this.src)">
+            <img src="imo-7.jpeg" alt="IMO Oslo views" onclick="openLightbox(this.src)">
+            <img src="imo-8.jpeg" alt="IMO moments" onclick="openLightbox(this.src)">
+            <img src="imo-9.jpeg" alt="IMO journey" onclick="openLightbox(this.src)">
+        </div>
+
+        <div class="olympiad-links">
+            <a href="https://www.imo-official.org/participant_r.aspx?id=31759" target="_blank">
+                IMO Official Results
+            </a>
+            <a href="https://www.youtube.com/watch?v=aWN8AYYUyRI" target="_blank">
+                ▶ AMT Team Introduction
+            </a>
+        </div>
     </div>
+
+    <!-- ═══ EGMO ═══ -->
+    <div class="olympiad-section reveal">
+        <div class="olympiad-header">
+            <h2>European Girls' Mathematical Olympiad</h2>
+            <span class="olympiad-date">April 2022 · Eger, Hungary</span>
+        </div>
+        <div class="olympiad-subtitle">
+            Gold Medal — Ranked 6th globally
+        </div>
+
+        <div class="olympiad-links">
+            <a href="https://www.egmo.org/people/person1955/" target="_blank">
+                EGMO Official Profile
+            </a>
+            <a href="https://www.youtube.com/watch?v=FZ-4xigLZVk" target="_blank">
+                ▶ AMT Team Introduction
+            </a>
+        </div>
+    </div>
+
 </div>
 
 <footer>
