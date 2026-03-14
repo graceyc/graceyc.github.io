@@ -27,13 +27,46 @@
         <div class="section-tag reveal">Projects</div>
         <h1 class="section-heading reveal r-d1">Things I've Built</h1>
         <p class="section-desc reveal r-d2">
-            Course projects and independent explorations across NLP, 
+            Course projects and independent explorations across robotics, NLP, 
             knowledge graphs, and financial ML.
         </p>
     </div>
 
     <div class="projects-full">
 
+        <!-- DRAKESORT -->
+        <div class="project-full-card reveal">
+            <div class="project-full-img">
+                <img src="WechatIMG1562.jpeg" alt="DrakeSort robotic sorting system">
+            </div>
+            <div class="project-full-body">
+                <h3>DrakeSort: Autonomous Robotic Trash Sorting via VLM Reasoning</h3>
+                <p>
+                    Built a simulation-based robotic sorting system in Drake that automates the 
+                    identification, grasping, and placement of recyclables from a mixed pile. 
+                    The perception pipeline uses YOLO11 for object localization and GPT-4o for 
+                    zero-shot material classification — so the robot can categorize items it's 
+                    never seen before based on visual reasoning rather than pattern matching.
+                </p>
+                <p>
+                    For manipulation, we combined multi-view point cloud fusion for geometry-aware 
+                    grasp planning with a dynamic throwing primitive based on analytical ballistic 
+                    modeling. Instead of slowly placing objects into bins, the robot calculates 
+                    trajectories and tosses them — decoupling cycle time from workspace size.
+                </p>
+                <div class="tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Drake</span>
+                    <span class="tag">YOLO11</span>
+                    <span class="tag">GPT-4o</span>
+                    <span class="tag">Point Clouds</span>
+                    <span class="tag">Robotics</span>
+                </div>
+                <a href="https://youtu.be/Ffuu_7hvVzQ" target="_blank" class="project-link">Watch demo</a>
+            </div>
+        </div>
+
+        <!-- REVERSAL CURSE -->
         <div class="project-full-card reveal">
             <div class="project-full-img">
                 <img src="WechatIMG1556.jpeg" alt="Knowledge Graph Embeddings for Reversal Curse">
